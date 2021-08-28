@@ -1,0 +1,3 @@
+use news;
+db.dropDatabase();
+use news;

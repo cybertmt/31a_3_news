@@ -1,0 +1,15 @@
+
+curl -X "POST" -d '{"ID":1,"Title":"Статья 1","Content":"Содержание статьи 1","AuthorID":0,"CreatedAt":0}' "http://127.0.0.1:8080/posts"
+
+curl -X "POST" -d '{"ID":2,"Title":"Статья 2","Content":"Содержание статьи 2","AuthorID":1,"CreatedAt":0}' "http://127.0.0.1:8080/posts"
+
+curl -X "POST" -d '{"ID":3,"Title":"Статья 3","Content":"Содержание статьи 3","AuthorID":0,"CreatedAt":1}' "http://127.0.0.1:8080/posts"
+
+curl -X "POST" -d '{"ID":4,"Title":"Статья 4","Content":"Содержание статьи 4","AuthorID":1,"CreatedAt":2}' "http://127.0.0.1:8080/posts"
+
+curl -X "DELETE" -d '{"ID":2}' "http://127.0.0.1:8080/posts"
+
+curl -X "PUT" -d '{"ID":4,"Title":"Новая Статья 4","Content":"Новое Содержание статьи 4","AuthorID":1,"CreatedAt":2}' "http://127.0.0.1:8080/posts"
+
+curl "http://127.0.0.1:8080/posts"
+
